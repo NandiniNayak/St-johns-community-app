@@ -1,0 +1,25 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :organisation %>
+    <%= f.input :title %>
+    <%= f.input :info %>
+    <%= f.label :date %><br>
+    <%= f.date_field :date %><br>
+    <%= f.label :start_time %><br>
+    <%= f.time_field :start_time %>
+    <%= f.time_field :end_time %>
+    <%= f.input :image %>
+    <%= f.input :street %>
+    <%= f.input :suburb %>
+    <%= f.input :state %>
+    <%= f.input :postcode %>
+    <%= f.input :latitude %>
+    <%= f.input :longitude %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

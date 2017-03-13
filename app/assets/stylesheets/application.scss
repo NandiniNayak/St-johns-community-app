@@ -2,7 +2,69 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 
 body {
-  padding-top: 50px;
+  padding-top: 60px;
+  background-color: #33A8FF;
+}
+
+.logo {
+    font-family: 'Bungee Inline';
+    color: #eebbee;
+    font-size: 150%;
+}
+.navbar-inverse .navbar-brand {
+  color: #fbfbfb;
+}
+
+.tab-style{
+  color: purple;
+  font-size: 15px;
+  background-color: pink;
+  border: 1px solid purple;
+}
+.tbody-style{
+  color: pink;
+  font-size: 12px;
+  background-color: black;
+  border: 2px solid black;
+  font-family: 'neucha';
+}
+.jbody-style{
+  color: pink;
+  font-size: 12px;
+  background-color: black;
+  border: 2px solid black;
+  font-family: 'neucha';
+}
+.job-style{
+  color: pink;
+  background-color:black;
+  border: 2px solid black;
+  font-family: 'neucha';
+}
+.red{
+  color: red;
+}
+.issue-style{
+  color: #ffffff;
+  font-size: 28px;
+  background-color: #003366;
+  border: 3px solid black;
+}
+
+.issuebody-style{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border: 2px solid black;
+  
+  
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: purple;
+    border-color: #d43a94;
 }

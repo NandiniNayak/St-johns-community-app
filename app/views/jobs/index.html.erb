@@ -1,0 +1,47 @@
+<h1>Jobs</h1>
+
+<table class="table">
+  <thead class = "job-style">
+    <tr>
+      <th>Title</th>
+      <th>Job type</th>
+      <th>Salary</th>
+      <th>Experience</th>
+      <th>Age</th>
+      <th>Contact</th>
+      <th>Email</th>
+      <th>Street</th>
+      <th>Suburb</th>
+      <th>Postcode</th>
+      <th>State</th>
+      <th>Organisation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody class = "jbody-style">
+    <% @jobs.each do |job| %>
+      <tr>
+              <td><%= job.title %></td>
+              <td><%= job.job_type %></td>
+              <td><%= job.salary %></td>
+              <td><%= job.experience %></td>
+              <td><%= job.age %></td>
+              <td><%= job.contact %></td>
+              <td><%= job.email %></td>
+              <td><%= job.street %></td>
+              <td><%= job.suburb %></td>
+              <td><%= job.postcode %></td>
+              <td><%= job.state %></td>
+              <td><%= job.organisation.name %></td>
+              <td><%= link_to 'Show', job %></td>
+        <td><%= link_to 'Edit', edit_job_path(job) %></td>
+        <td><%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job', new_job_path %>

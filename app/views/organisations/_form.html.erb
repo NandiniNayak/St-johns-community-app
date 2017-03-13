@@ -1,0 +1,21 @@
+<%= simple_form_for(@organisation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, label: 'Enter the name of your organisation' %>
+    <%= f.input :logo, as: :file %>
+    <%= f.input :org_type, collection: ['School', 'Church', 'Business', 'Club', 'Local Government'] %>
+    <%= f.input :info, placeholder: 'Tell us about your organisation', input_html: { rows: 5 } %>
+    <%= f.input :contact_name %>
+    <%= f.input :contact_email %>
+    <%= f.input :contact_phone %>
+    <%= f.input :street %>
+    <%= f.input :suburb %>
+    <%= f.input :state, collection: ['ACT', 'QLD', 'NSW', 'VIC', 'SA', 'WA', 'NT', 'TAS'] %>
+    <%= f.input :postcode %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

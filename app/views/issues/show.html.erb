@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+<p>
+  <strong>Title:</strong>
+  <%= @issue.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @issue.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @issue.image, class: 'img-responsive img-thumbnail' %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @issue.suburb %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @issue.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @issue.state %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @issue.postcode %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @issue.contact %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @issue.priority %>
+</p>
+
+<p>
+  <strong>Solved:</strong>
+  <%= @issue.solved %>
+</p>
+</div>
+</div>
+</div>
+</div>
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

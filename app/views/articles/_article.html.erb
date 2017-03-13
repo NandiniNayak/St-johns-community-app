@@ -1,0 +1,13 @@
+<!--  _article.html.erb  -->
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title"><%= link_to article.title, article %> <span class="badge pull-right"><%= pluralize(article.comments.count, 'comment') %></span></h2>
+  </div>
+  <div class="panel-body">
+    <%= image_tag article.image, width: '100%' %>
+    <p><%= truncate(article.description, length: 200) %></p>
+    <p><%= link_to 'Read more', article, class: 'btn btn-primary' %></p>
+    <p>Posted by: <%= article.organisation.name %>, <%= time_ago_in_words(article.created_at) %> ago.</p>
+  </div>
+</div>

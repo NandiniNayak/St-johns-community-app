@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'carrierwave'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -11,7 +11,9 @@ gem 'simple_form'
 gem 'cancancan'
 gem 'rolify'
 gem 'bootstrap-sass'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'record_tag_helper', '~> 1.0'
+gem 'geocoder'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

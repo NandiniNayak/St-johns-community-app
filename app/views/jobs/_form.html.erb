@@ -1,0 +1,23 @@
+<%= simple_form_for(@job) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :job_type,collection:[:casual,:permanent,:volunteer,:temporary] %>
+    <%= f.input :salary %>
+    <%= f.input :description %>
+    <%= f.input :experience %>
+    <%= f.input :age %>
+    <%= f.input :contact %>
+    <%= f.input :email %>
+    <%= f.input :street %>
+    <%= f.input :suburb %>
+    <%= f.input :postcode %>
+    <%= f.input :state %>
+    <%= f.association :organisation %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

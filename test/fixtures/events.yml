@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  organisation: one
+  user: one
+  title: MyString
+  info: MyText
+  date: 2016-11-23
+  start_time: 2016-11-23 02:48:45
+  end_time: 2016-11-23 02:48:45
+  image: MyString
+  street: MyString
+  suburb: MyString
+  state: MyString
+  postcode: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  organisation: two
+  user: two
+  title: MyString
+  info: MyText
+  date: 2016-11-23
+  start_time: 2016-11-23 02:48:45
+  end_time: 2016-11-23 02:48:45
+  image: MyString
+  street: MyString
+  suburb: MyString
+  state: MyString
+  postcode: MyString
+  latitude: 1.5
+  longitude: 1.5

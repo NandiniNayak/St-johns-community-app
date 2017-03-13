@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2 class="panel-title"><%= @job.title %></h2>
+      </div>
+      <div class="panel-body">
+
+<p>
+  <strong>Title:</strong>
+  <%= @job.title %>
+</p>
+
+<p>
+  <strong>Job type:</strong>
+  <%= @job.job_type %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @job.salary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @job.description %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @job.experience %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @job.age %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @job.contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @job.email %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @job.street %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @job.suburb %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @job.postcode %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @job.state %>
+</p>
+
+<p>
+  <strong>Organisation:</strong>
+  <%= @job.organisation.name %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>
+</div>
+</div>
+</div>
+</div>

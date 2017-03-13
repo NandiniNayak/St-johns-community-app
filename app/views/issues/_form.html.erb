@@ -1,0 +1,20 @@
+<%= simple_form_for(@issue) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :image ,as: :file%>
+    <%= f.input :suburb %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :postcode %>
+    <%= f.input :contact %>
+    <%= f.input :priority,collection: 1..5 %>
+    <%= f.input :solved %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
